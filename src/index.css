@@ -437,7 +437,7 @@ code {
 }
 @media screen and (max-width: 500px) {
   .prev_block {
-    margin-top: 8vh;
+    margin-top: 12vh;
     width: 95vw;
     margin-left: 2.75vw;
     height: 50vh;
@@ -460,7 +460,7 @@ code {
     width: calc(var(--index) * 39);
   }
   .serv_text {
-    font-size: calc(var(--index) * 1.35);
+    font-size: calc(var(--index) * 1.45);
   }
   .fleet_title,
   .serv_title,
@@ -478,7 +478,7 @@ code {
     width: 100vw;
   }
   .card_par {
-    font-size: calc(var(--index) * 1.35);
+    font-size: calc(var(--index) * 1.45);
   }
   .picture_swiper {
     width: 100vw;
@@ -486,21 +486,21 @@ code {
   }
   .frame {
     width: 95vw;
-    height: 165vh;
+    height: 185vh;
   }
   .frame_2 {
-    font-size: calc(var(--index) * 1.35);
+    font-size: calc(var(--index) * 1.45);
     width: 90vw;
-    height: 160vh;
+    height: 175vh;
   }
   .about_block {
     width: 100.5vw;
   }
   .about_title {
-    font-size: calc(var(--index) * 1.6);
+    font-size: calc(var(--index) * 1.7);
   }
   .about_title_par {
-    font-size: calc(var(--index) * 1.45);
+    font-size: calc(var(--index) * 1.55);
   }
   .about_logo {
     width: 13vw;
