@@ -438,7 +438,7 @@ code {
 @media screen and (max-width: 500px) {
   .prev_block {
     margin-top: 8vh;
-    width: 100vw;
+    width: 95vw;
     margin-left: 2.75vw;
     height: 50vh;
     background-image: url("./media/phone-main.png");
@@ -448,7 +448,7 @@ code {
     left: 42%;
   }
   .serv_block {
-    margin-top: -13vh;
+    margin-top: -7vh;
   }
   .serv_container {
     flex-direction: column;
@@ -486,12 +486,12 @@ code {
   }
   .frame {
     width: 95vw;
-    height: 130vh;
+    height: 165vh;
   }
   .frame_2 {
     font-size: calc(var(--index) * 1.25);
     width: 90vw;
-    height: 145vh;
+    height: 160vh;
   }
   .about_block {
     width: 100.5vw;
@@ -515,7 +515,7 @@ code {
     width: 20vw;
   }
   .burger.open .burger-menu {
-    width: 100vw;
+    width: 97vw;
     height: 125vh;
   }
 }
