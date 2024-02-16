@@ -2,14 +2,14 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Scrollbar, Pagination } from "swiper/modules";
 import "swiper/css/bundle";
-import cadilac from "./media/cadilac.WEBP";
-import cadilacSalon from "./media/cadilac-salon.WEBP";
-import lincoln from "./media/lincoln.WEBP";
-import lincolnSalon from "./media/lincoln-salon.WEBP";
-import sprinter from "./media/sprinter.WEBP";
-import sprinterSalon from "./media/spinter-salon.WEBP";
-import tesla from "./media/tesla.WEBP";
-import teslaSalon from "./media/tesal-salon.WEBP";
+import cadilac from "./media/cadilac.jpg";
+import cadilacSalon from "./media/cadilac-salon.jpg";
+import lincoln from "./media/lincoln.jpg";
+import lincolnSalon from "./media/lincoln-salon.jpg";
+import sprinter from "./media/sprinter.jpg";
+import sprinterSalon from "./media/sprinter-salon.jpg";
+import tesla from "./media/tesla.jpg";
+import teslaSalon from "./media/tesla-salon.jpg";
 
 const styles = {
   gradientOverlay: {
