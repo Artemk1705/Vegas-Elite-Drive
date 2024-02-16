@@ -486,12 +486,12 @@ code {
   }
   .frame {
     width: 95vw;
-    height: 185vh;
+    height: 200vh;
   }
   .frame_2 {
     font-size: calc(var(--index) * 1.45);
     width: 90vw;
-    height: 175vh;
+    height: 190vh;
   }
   .about_block {
     width: 100.5vw;
