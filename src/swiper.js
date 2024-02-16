@@ -40,6 +40,10 @@ const SwiperComp = () => {
         type: "progressbar",
       }}
       speed={700}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
     >
       <SwiperSlide>
         <div className="swiper-slide">
