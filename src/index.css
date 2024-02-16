@@ -438,7 +438,7 @@ code {
 @media screen and (max-width: 500px) {
   .prev_block {
     margin-top: 8vh;
-    width: 107vw;
+    width: 100vw;
     margin-left: 2.75vw;
     height: 50vh;
     background-image: url("./media/phone-main.png");
@@ -453,7 +453,7 @@ code {
   .serv_container {
     flex-direction: column;
     align-items: center;
-    width: 113vw;
+    width: 100vw;
     justify-content: center;
   }
   .serv_card {
@@ -465,36 +465,36 @@ code {
   .fleet_title,
   .serv_title,
   .contact_title {
-    width: 113vw;
+    width: 100vw;
     font-size: calc(var(--index) * 1.75);
   }
   .fleet_block {
-    width: 113vw;
+    width: 100vw;
   }
   .card {
     flex-direction: column;
   }
   .card_container {
-    width: 113vw;
+    width: 100vw;
   }
   .card_par {
     font-size: calc(var(--index) * 1.25);
   }
   .picture_swiper {
-    width: 113vw;
+    width: 100vw;
     height: calc(var(--index) * 45);
   }
   .frame {
-    width: 105vw;
+    width: 95vw;
     height: 130vh;
   }
   .frame_2 {
     font-size: calc(var(--index) * 1.25);
-    width: 100vw;
-    height: 125vh;
+    width: 90vw;
+    height: 145vh;
   }
   .about_block {
-    width: 112.5vw;
+    width: 100.5vw;
   }
   .about_title {
     font-size: calc(var(--index) * 1.5);
@@ -506,7 +506,7 @@ code {
     width: 13vw;
   }
   .footer_block {
-    width: 113vw;
+    width: 100vw;
   }
   .contact_icon {
     width: 7.5vw;
@@ -515,7 +515,7 @@ code {
     width: 20vw;
   }
   .burger.open .burger-menu {
-    width: 107.5vw;
-    height: 115vh;
+    width: 100vw;
+    height: 125vh;
   }
 }
