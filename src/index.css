@@ -1,13 +1,521 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  padding: 0;
+}
+@font-face {
+  font-family: M-light;
+  src: url(../public/fonts/static/MPLUS1p-Light.ttf);
+}
+@font-face {
+  font-family: M-reg;
+  src: url(../public/fonts/static/MPLUS1p-Regular.ttf);
+}
+.App {
+  background-color: rgb(0, 0, 0);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: M-reg;
+}
+p,
+li,
+ul,
+a,
+div {
+  font-family: M-light;
+}
+:root {
+  --index: calc(1vw + 0.6vh);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.nav_block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  z-index: 2;
+}
+.prev_block {
+  margin-left: -0.5vw;
+  height: calc(var(--index) * 42);
+  background-image: url("./media/MainPrev\ \(1\).png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -3vh;
+}
+.nav_logo_pic {
+  width: 7vw;
+}
+.drive {
+  font-family: M-light;
+}
+.block_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.about_logo {
+  width: 4vw;
+}
+.nav_container {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5vw;
+  width: 7.5vw;
+  margin: 0 15px;
+  font-size: calc(var(--index) * 0.65);
+  margin-right: 2.5vw;
+  cursor: pointer;
+}
+.contact {
+  border: 1.5px solid white;
+  box-shadow: 4px 4px white;
+  transition: 0.3s;
+}
+.contact:hover {
+  background-color: white;
+  color: #000;
+}
+.nav:hover {
+  text-decoration: underline;
+}
+.fleet_block {
+  padding-bottom: 35px;
+  border-top: 3px solid white;
+}
+.fleet_title,
+.serv_title,
+.contact_title {
+  display: flex;
+  justify-content: center;
+  font-size: calc(var(--index) * 1);
+  padding: 35px 0;
+}
+.about_title {
+  display: flex;
+  justify-content: center;
+  font-size: calc(var(--index) * 1);
+  padding: 35px 0 0 0;
+}
+.swiper-pagination-progressbar {
+  background: rgba(255, 255, 255, 0.054) !important;
+  height: 4px;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #ffffff !important;
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: start;
+  height: 65vh;
+  width: 45vw;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card_title {
+  text-align: start;
+  font-size: calc(var(--index) * 5);
+  line-height: 20vh;
+  letter-spacing: -0.2vw;
+  word-spacing: 5vw;
+  text-transform: uppercase;
+  margin: 0;
+  z-index: 2;
+}
+.card_par {
+  font-size: calc(var(--index) * 1);
+  height: 100%;
+  padding: 0 30px;
+  margin-top: 4vh;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.picture_swiper {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.857),
+    rgba(249, 249, 249, 0.428)
+  ) !important;
+  width: 55vw;
+  height: calc(var(--index) * 37);
+}
+
+.serv_block {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 1%,
+    rgba(249, 249, 249, 0.03+5),
+    rgba(0, 0, 0, 1) 99%
+  );
+  z-index: 2;
+}
+.serv_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.serv_card_pic {
+  width: calc(var(--index) * 7.5);
+}
+.serv_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid white;
+  width: calc(var(--index) * 17.5);
+  box-shadow: 0 0 20px 3px rgba(198, 198, 198, 0.106);
+  transition: 0.3s;
+  margin: 3vw;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: black;
+}
+.serv_card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 25px 4px rgba(198, 198, 198, 0.188);
+}
+.serv_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: calc(var(--index) * 0.6);
+}
+.serv_price,
+.serv_price_button {
+  background-color: rgba(39, 39, 39, 0.47);
+  padding: 0.65vw 2vw;
+  border: 1.5px solid white;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.price_list {
+  font-size: calc(var(--index) * 2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: underline;
+  border: 2px solid white;
+  width: 50%;
+  transition: 0.3s;
+  cursor: default;
+}
+.price_list:hover {
+  background-color: rgba(90, 90, 90, 0.378);
+}
+
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal {
+  bottom: 0 !important;
+  position: relative;
+}
+.about_block {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 35px;
+}
+
+.frame {
+  border: 1.5px solid white;
+  width: 75vw;
+  height: 95vh;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.135);
+}
+.frame_2 {
+  border: 1.5px solid white;
+  width: 70vw;
+  height: 90vh;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about_title {
+}
+.about_title_par {
+  font-size: calc(var(--index) * 0.8);
+  padding: 10px 35px;
+}
+.about_par {
+  padding: 5px 35px;
+}
+.footer_block {
+  margin-top: 70px;
+  border-top: 1.5px solid white;
+}
+.footer_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact_icon {
+  width: 2vw;
+  padding: 15px;
+}
+.burger {
+  position: relative;
+}
+.burger-lines {
+  width: 100vw;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  top: 0px;
+  z-index: 4;
+  padding: 30px 30px 30px 20px;
+  background-color: #020101;
+}
+.burger-line {
+  z-index: 3;
+  width: 40px;
+  height: 3.5px;
+  background-color: aliceblue;
+  transition: opacity 0.3s ease-in-out;
+}
+.burger.open .burger-line:nth-child(1) {
+  opacity: 0;
+}
+.burger.open .burger-line:nth-child(2) {
+  opacity: 0;
+}
+.burger.open .burger-line:nth-child(3) {
+  opacity: 0;
+}
+.burger-menu a {
+  text-decoration: none;
+}
+.burger-menu {
+  position: fixed;
+  top: -0;
+  left: 0;
+  height: 100vh;
+  width: 0;
+  backdrop-filter: blur(10px);
+  background-color: rgba(123, 123, 123, 0.507);
+  padding: 10px;
+  border: 4px solid rgba(123, 123, 123, 0.507);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  word-wrap: unset;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.burger.open .burger-menu {
+  width: 97vw;
+  transition: width 0.9s ease-in-out;
+  z-index: 5;
+}
+.burger.closed .burger-menu {
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+  padding: 0;
+  border: 0px;
+}
+.burger-menu li {
+  margin-bottom: 10px;
+}
+.burger-menu li:last-child {
+  margin-bottom: 0;
+}
+.burger-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: rgb(251, 251, 251);
+  padding: 10px;
+  font-size: 20px;
+}
+.bur_main,
+.bur_contact {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 50px 0px 12.5px 0px;
+  color: rgb(255, 255, 255);
+}
+.bur_about,
+.bur_contact,
+.bur_careers {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 12.5px 0px 12.5px 0px;
+  white-space: nowrap;
+  color: rgb(255, 255, 255);
+}
+.bur_logo {
+  width: 10vw;
+  position: fixed;
+  left: 45%;
+  right: 0;
+  top: 0;
+  z-index: 4;
+}
+@media screen and (max-width: 1000px) {
+  .prev_block {
+    margin-top: 5vh;
+    height: 50vh;
+  }
+  .serv_card {
+    width: calc(var(--index) * 24);
+    margin: 2.5vw;
+    border-radius: 4px;
+  }
+  .serv_text {
+    font-size: calc(var(--index) * 0.9);
+  }
+  .card_container {
+    height: 50vh;
+    width: 45vw;
+  }
+  .card_par {
+    margin-top: 0;
+    height: unset;
+    font-size: calc(var(--index) * 0.9);
+  }
+  .price_list {
+    margin-left: 0;
+  }
+  .frame {
+    width: 80vw;
+  }
+  .frame_2 {
+    font-size: calc(var(--index) * 0.9);
+    width: 75vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .prev_block {
+    height: 40vh;
+  }
+  .serv_block {
+    margin-bottom: 4vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .prev_block {
+    margin-top: 8vh;
+    width: 107vw;
+    margin-left: 2.75vw;
+    height: 50vh;
+    background-image: url("./media/phone-main.png");
+  }
+  .bur_logo {
+    width: 17vw;
+    left: 42%;
+  }
+  .serv_block {
+    margin-top: -13vh;
+  }
+  .serv_container {
+    flex-direction: column;
+    align-items: center;
+    width: 113vw;
+    justify-content: center;
+  }
+  .serv_card {
+    width: calc(var(--index) * 39);
+  }
+  .serv_text {
+    font-size: calc(var(--index) * 1.25);
+  }
+  .fleet_title,
+  .serv_title,
+  .contact_title {
+    width: 113vw;
+    font-size: calc(var(--index) * 1.75);
+  }
+  .fleet_block {
+    width: 113vw;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card_container {
+    width: 113vw;
+  }
+  .card_par {
+    font-size: calc(var(--index) * 1.25);
+  }
+  .picture_swiper {
+    width: 113vw;
+    height: calc(var(--index) * 45);
+  }
+  .frame {
+    width: 105vw;
+    height: 130vh;
+  }
+  .frame_2 {
+    font-size: calc(var(--index) * 1.25);
+    width: 100vw;
+    height: 125vh;
+  }
+  .about_block {
+    width: 112.5vw;
+  }
+  .about_title {
+    font-size: calc(var(--index) * 1.5);
+  }
+  .about_title_par {
+    font-size: calc(var(--index) * 1.35);
+  }
+  .about_logo {
+    width: 13vw;
+  }
+  .footer_block {
+    width: 113vw;
+  }
+  .contact_icon {
+    width: 7.5vw;
+  }
+  .nav_logo_pic {
+    width: 20vw;
+  }
+  .burger.open .burger-menu {
+    width: 107.5vw;
+    height: 115vh;
+  }
 }
