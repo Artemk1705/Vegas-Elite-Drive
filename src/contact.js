@@ -20,7 +20,7 @@ export default function Contact() {
             <img src={email} alt="" className="contact_icon" />
           </a>
           <a href="">
-            <img src={phone} alt="" className="contact_icon" />
+            <img src={phone} alt="tel:+13238990948" className="contact_icon" />
           </a>
         </div>
       </div>

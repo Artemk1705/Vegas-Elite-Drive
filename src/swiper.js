@@ -186,7 +186,7 @@ const SwiperComp = () => {
             <div style={styles.gradientOverlay}></div>
             <div className="card_container">
               <h2 className="card_title">Tesla</h2>
-              <h4 className="price_list">60$/hr</h4>
+              <h4 className="price_list">90$/hr</h4>
             </div>
           </div>
         </div>
