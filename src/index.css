@@ -394,6 +394,14 @@ code {
   top: 0;
   z-index: 4;
 }
+@media screen and (max-width: 1600px) {
+  .frame {
+    height: 150vh;
+  }
+  .frame_2 {
+    height: 140vh;
+  }
+}
 @media screen and (max-width: 1000px) {
   .prev_block {
     margin-top: 5vh;
